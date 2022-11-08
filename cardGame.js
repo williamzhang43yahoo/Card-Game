@@ -78,10 +78,8 @@ const creatDeck = (numOfDecks) => {
                 originalDeck.push(ranks[j] + suits[i])
             }
         }
-        // console.log('originalDeck is: ', originalDeck)
         deckArr = deckArr.concat(originalDeck)
     }
-    // console.log('deckArr is: ', deckArr)
     return deckArr
 }
 
@@ -119,17 +117,14 @@ const shuffleDeck = (deck) => {
 // Start to play game by using only one deck of cards with two players evenly splitting the deck of cards;
 const startGame = () => {
     let deck = shuffleDeck(deckArr)
-    // console.log('randDeck is: ', deck)
-
+   
     const deckMid = Math.ceil(deck.length / 2)
     deck1 = deck.slice(0, deckMid)
     deck2 = deck.slice(deckMid, deck.length)
 
     deck1StartElement.innerHTML = JSON.stringify(deck1).replaceAll(",", " ")
     deck2StartElement.innerHTML = JSON.stringify(deck2).replaceAll(",", " ")
-    console.log('deck1 is: ', deck1)
-    console.log('deck2 is: ', deck2)
-
+    
     for (let i = 0; i < 10000; i++) {
         const currCard1 = deck1.pop()
         const currCard2 = deck2.pop()
