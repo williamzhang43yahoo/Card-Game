@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.deck {
+  height: 100%;
+  padding: 20px;
+  margin: 40px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.deck1-start {
+  background-color: darkgreen;
+}
+
+.deck2-start {
+  background-color: brown;
+}
+
+.deck1-end {
+  background-color: green;
+}
+
+.deck2-end {
+  background-color: goldenrod;
+}
+
+.text {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+span{
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  margin: 50px;
+  background-color: darkorange;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}

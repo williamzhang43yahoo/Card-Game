@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play Card Game</title>
+    <script src="cardGame.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <div>
+        <span>DECK1 STARTING</span>
+        <div class="deck1-start deck"></div>
+        <span>DECK1 FINISHED</span>
+        <div class="deck1-end deck"></div>
+        <span>DECK2 STARTING</span>
+        <div class="deck2-start deck"></div>
+        <span>DECK2 FINISHED</span>
+        <div class="deck2-end deck"></div>
+        <div class="text"></div>
+    </div>
+
+    <div style="display: flex; justify-content: center">
+        <button class="one-deck-card" onclick="oneDeckPlay()">Play One Deck Card</button>
+        <button class="two-deck-card" onclick="twoDeckPlay()">Play Two Deck Card</button>
+    </div>
+
+</div>
+</body>
+</html>
